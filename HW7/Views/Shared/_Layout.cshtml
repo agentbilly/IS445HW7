@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cox, Chase Homework 3</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/StyleSheet.css" />
+</head>
+<body>
+    <header>
+    <h1>Cox, Chase Homework 3</h1>
+    <hr/>
+    <nav>
+        <ul>
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("Web Form Demo", "WebForm", "Home")</li>
+            <li>@Html.ActionLink("About Me", "Bio", "Home")</li>
+        </ul>
+    </nav>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <address>Chase Cox&#169 Contact Information</address>
+        <address><a href="mailto:chase.cox@csulb.edu">Email: chase.cox@csulb.edu</a></address>
+        <address><i>Phone:(562)985-4554</i></address>
+    </footer>
+</body>
+</html>

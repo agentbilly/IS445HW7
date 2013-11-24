@@ -1,0 +1,82 @@
+﻿@model string
+@{
+    ViewBag.Title = "WebForm";
+    <link href="@Url.Content("~/css/StyleSheet.css")" rel="stylesheet" type="text/css" />
+}
+
+@using (Html.BeginForm())
+{
+
+    
+    <h2>Welcome to my Web Form</h2>
+    <h3>A demo form for hotel room reservation</h3>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label>
+                Full name: 
+                <input type="text" name="name" id="Field1" size="30" maxlength="100" placeholder="Firstname Lastname" />
+            </label>
+            <br />
+            <label>
+                Email address:
+                <input type="email" id="Field2" name="email" size="30" maxlength="100" />
+            </label>
+            <br />
+            <label>
+                Phone:
+                <input type="text" id="Field3" name="phonenumber" size="30" maxlength="10" />
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Room Information
+            </legend>
+            <label>
+                Arrival date:
+                <input type="date" id="Field4" name="Arrivaldate"/>
+            </label>
+            <br />
+            <label>
+                Arrival time:
+                <input type="time" id="Field5" name="Arrivaltime"/>
+            </label>
+            <br />
+            <label>
+                Select a room type:
+                <select name="roomtype" id="Field6">
+                    <option value="Luxury">Luxury</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Economic">Economic</option>
+                </select>
+            </label>
+            <br />
+            <label>
+                Number of nights (valid number is from 1 to 30):
+                <input type="number" max="30" name="Nights" id="Field7" value="1" />
+            </label>
+            <br />
+            <label>
+                Number of guests (the maximum guests is ):
+                <input type="number" max="3" name="guests" id="Field8" value="0" />
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Other Information
+            </legend>
+            <label>
+                Promo code:
+                <input type="text" name="Promocode" id="Field9" />
+            </label>
+            <br />
+            <label>
+                Special Note:
+            </label>
+            <textarea rows="5" cols="40" id="Field10" name="Notes"></textarea>
+        </fieldset>
+        <input type="button" value="Clear form" onclick="window.location.reload()"/>
+        <input type="submit" value="Request Reservation" />
+    </form>
+}

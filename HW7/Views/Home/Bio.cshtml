@@ -1,0 +1,30 @@
+﻿@model string
+
+@{
+    ViewBag.Title = "Bio";
+    <link href="@Url.Content("~/css/StyleSheet.css")" rel="stylesheet" type="text/css" />
+}
+
+
+@using (Html.BeginForm())
+{
+    <h2>About myself</h2>
+    <img class="revypic" src="~/images/JenRevy01.jpg"/>
+    <h3 class="alignleft">Education</h3>
+    <ul>
+        <li>2010, BS Business Administration: Information Systems, Cal Poly San Luis Obispo</li>
+        <li>2013, MBA Information Systems, CSULB</li>
+    </ul>
+    <h3 class="alignleft">Working experience</h3>
+    <ul>
+        <li>Project and Cost Control Analyst, Northrop Grumman, 3.5 years</li>
+        <li>Data Center Technician, Cal Poly San Luis Obispo, 1 year</li>
+    </ul>
+    <h3 class="alignleft">Expectation for this course</h3>
+    <p>
+    I currently accepted a job offer for a web developer position in Australia with my company.  
+    I am really looking to working with Javascript as SQL and javascript are really the main things I will be 
+    working with.
+    </p>
+    <br />
+}

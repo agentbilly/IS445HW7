@@ -1,0 +1,53 @@
+﻿body {width:  720px;
+      margin:auto
+}
+h1{text-align:center}
+h2 {color: blue;
+    text-align:center;
+}
+h3 {color: purple;
+    text-align:center;
+}
+hr {color: #00FF00;
+    /*border-width: medium;*/
+    height: 8px;
+    border-style: solid;
+    background-color: #00FF00;
+}
+p1 { text-align: left;}
+.centeredBox{
+       width: 600px;
+       min-height:300px;
+       margin:0 auto;
+}
+nav {margin: 2em 2em 2em 2em;
+}
+nav ul li {margin:0px 20px 20px 0px;
+           display: inline-block;
+}
+a:link {text-decoration:none;}
+a:hover {color: red;
+         text-transform: uppercase;
+         text-decoration:underline;
+}
+div.centeralign {
+    text-align: center;
+}
+footer {border-top:double;
+        padding-top: 5px;
+}
+footer address {display: inline-block;
+                margin:0px 20px 20px 0px;
+}
+hr {
+}
+.revypic {float: right;
+          height:200px;
+          width: 200px;
+}
+.alignleft {text-align:left;
+}
+form {border-style:solid;
+      border-color: green;
+      padding: 10px 10px 10px 10px;
+}
